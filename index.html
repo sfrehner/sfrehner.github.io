@@ -1,19 +1,19 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gather</title>
+    <meta name="description" content="Gather helps people connect through shared hobbies, local events, and community groups.">
+    <meta name="keywords" content="Gather, hobbies, events, community, groups, friendships">
+    <meta name="author" content="Sean Frehner">
+    <title>Gather | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <header>
-    <img src="Gather-logo.png" alt="Gather Logo" class="logo">
-
-    <p class="tagline">
-        Connect Through Shared Interests
-    </p>
-</header>
+    <header>
+        <img src="Gather-logo.png" alt="Gather Logo" class="logo">
+        <p class="tagline">Connect Through Shared Interests</p>
+    </header>
 
     <nav>
         <a href="index.html">Home</a>
@@ -25,11 +25,17 @@
 
     <main>
         <section class="hero">
-            <h2>Find Local Groups, Events, and New Friendships</h2>
-            <p>Gather helps people discover hobbies, meet new people, and join communities based on shared interests.</p>
-            <a href="#" class="button">Explore Groups</a>
+            <div class="hero-content">
+                <h2>Find Local Groups, Events, and New Friendships</h2>
+                <p>Discover hobbies, meet new people, and join communities based on shared interests.</p>
+
+                <form class="search-form" action="#">
+                    <input type="text" placeholder="Search groups, events, or interests...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
         </section>
-        
+
         <section>
             <h2>Featured Hobby Groups</h2>
 
@@ -59,7 +65,7 @@
                 <tr>
                     <td>Community Run</td>
                     <td>July 18, 2026</td>
-                    <td>Riverside Trails</td>
+                    <td>Riverside Trail</td>
                 </tr>
                 <tr>
                     <td>Gaming Meetup</td>
@@ -69,30 +75,55 @@
             </table>
         </section>
 
-        <section>
-            <h2>Join Gather</h2>
-            <p>Interested in joing a group? Fill out the form below to get started.</p>
+        <section class="community-spotlight">
+            <h2>Community Spotlight</h2>
 
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+            <div class="spotlight-card">
+              <div class="spotlight-image">
+    <img src="community.jpg" alt="Community Spotlight">
+</div>  
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <div class="spotlight-text">
+                    <h3>Hiking Enthusiasts</h3>
+                    <p>Members connect through local trail walks, weekend hikes, and outdoor meetups.</p>
+                    <a href="#" class="button">View Community</a>
+                </div>
+            </div>
+        </section>
 
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city">
+        <section class="join-stats">
+            <div class="join-box">
+                <h2>Join Gather</h2>
+                <p>Interested in joining a group? Fill out the form below to get started.</p>
 
-                <label for="Interests">Interests:</label>
-                <textarea id="interests" name="interests"></textarea>
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
 
-                <input type="submit" value="Submit">
-            </form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+
+                    <label for="interests">Interests:</label>
+                    <textarea id="interests" name="interests"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="stats-box">
+                <h2>Quick Stats</h2>
+                <p><strong>250+</strong><br>Hobby Groups</p>
+                <p><strong>1,000+</strong><br>Active Members</p>
+                <p><strong>50+</strong><br>Monthly Events</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Contact | Social Links | Copyright &copy; 2026 Gather</p>
+        <p>Contact | FAQ | Social Links | Copyright &copy; 2026 Gather</p>
     </footer>
 </body>
 </html>
